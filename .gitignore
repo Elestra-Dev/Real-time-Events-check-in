@@ -1,0 +1,41 @@
+# ----------------------
+# Global ignores
+# ----------------------
+node_modules/
+*.log
+*.pid
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# Backend (server/)
+# ----------------------
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+backend/prisma/dev.db
+backend/prisma/dev.db-journal
+
+# ----------------------
+# Mobile (expo project)
+# ----------------------
+mobile/node_modules/
+mobile/.expo/
+mobile/.expo-shared/
+mobile/.expo-dev/
+mobile/web-build/
+mobile/dist/
+mobile/build/
+mobile/.env
+mobile/.env.local
+mobile/.env.development.local
+mobile/.env.test.local
+mobile/.env.production.local
+mobile/android/
+mobile/ios/
+mobile/*.keystore
+mobile/*.jks
