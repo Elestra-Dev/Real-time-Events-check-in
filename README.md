@@ -15,7 +15,7 @@ https://drive.google.com/file/d/1aWPWWzz4OEYGMxo4D0kcFVPrpVm8V1WN/view?usp=shari
 
 # Installation & Setup
 1. Clone the repository
-git clone https://github.com/yourusername/realtime-event-checkin.git
+git clone https://github.com/Elestra-Dev/Real-time-Events-check-in.git
 cd realtime-event-checkin
 
 
