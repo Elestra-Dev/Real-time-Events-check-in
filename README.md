@@ -1,4 +1,4 @@
-Realtime Event Check-In 🎉
+# Realtime Event Check-In 🎉
 
 A fullstack Realtime Event Management app with:
 
@@ -37,13 +37,17 @@ Install dependencies:
 npm install
 
 
-Set up environment variables: create a .env file inside server/:
+### Environment Variables
 
-DATABASE_URL="postgresql://postgres:YOUR-PASSWORD@localhost:5432/realtime_checkin?schema=public"  //use your postgres password 
-JWT_SECRET="your-secret-key"  //give any secret key you want
+Create a `.env` file in the root directory with the following values:
+
+```env
+DATABASE_URL="postgresql://postgres:YOUR-PASSWORD@localhost:5432/realtime_checkin?schema=public"  # use your postgres password
+JWT_SECRET="your-secret-key"  # give any secret key you want
 PORT=4000
 SOCKET_PORT=4001
-CLIENT_ORIGIN=http://192.168.x.x:19006    //run command prompt and type ipconfig to get the IPv4 192.168.... number
+CLIENT_ORIGIN=http://192.168.x.x:19006  # run `ipconfig` in CMD and get your IPv4 192.168.... number
+
 
 
 Run Prisma migrations:
@@ -75,16 +79,21 @@ Install dependencies:
 npm install
 
 
-Configure Expo app URL: open app.json (or app.config.js) and set your local machine IP for socket & API:
+### Configure Expo app URL
 
+Open `app.json` (or `app.config.js`) and set your local machine IP for **socket** & **API**.  
+Run `ipconfig` in Command Prompt to find your IPv4 address (`192.168.x.x`).
+
+```json
 {
   "expo": {
     "extra": {
-      "apiUrl": "http://192.168.x.x:4000/graphql",    //run command prompt and type ipconfig to get the IPv4 192.168.... number
-      "socketUrl": "http://192.168.x.x:4001"          //run command prompt and type ipconfig to get the IPv4 192.168.... number
+      "apiUrl": "http://192.168.x.x:4000/graphql",
+      "socketUrl": "http://192.168.x.x:4001"
     }
   }
 }
+
 
 
 ⚠️ Replace 192.168.x.x with your local network IP (run ipconfig on Windows or ifconfig on Mac/Linux).
