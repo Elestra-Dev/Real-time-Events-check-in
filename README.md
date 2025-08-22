@@ -8,7 +8,7 @@ Frontend: React Native (Expo), Zustand, React Query, Expo Router
 
 Realtime updates: Users can join/leave events and instantly see who else is attending.
 
-# There is the drive link of preview video okf this project assignment - >
+# There is the drive link of preview video of this project assignment - >
 
 https://drive.google.com/file/d/1aWPWWzz4OEYGMxo4D0kcFVPrpVm8V1WN/view?usp=sharing
 
